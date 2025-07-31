@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoFlow - Future Car Transport Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- header   -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">🚗 AutoFlow</a>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#fleet">Fleet</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Premium Car Transport</h1>
+            <p>Professional, reliable, and secure vehicle transportation services across the nation</p>
+            <a href="#booking" class="cta-button">Book Now</a>
+            <a href="#pricing" class="cta-button">Pricing</a>
+
+
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="services">
+        <div class="container">
+            <h2 class="section-title">Why Choose AutoFlow?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚗</div>
+                    <h3>Professional Fleet</h3>
+                    <p>State-of-the-art transport vehicles with full insurance coverage</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>Real-Time Tracking</h3>
+                    <p>Monitor your vehicle's journey with our advanced GPS tracking system</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🗓️</div>
+                    <h3>Easy Booking</h3>
+                    <p>Book your ride in minutes with our user-friendly platform and get instant confirmation</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Express transport options for urgent relocations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Competitive Pricing</h3>
+                    <p>Transparent pricing with no hidden fees</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">💬</span>
+                    <h3>Live Support</h3>
+                    <p>24/7 customer support with instant chat and dedicated account managers</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⭐</span>
+                    <h3>Quality Assured</h3>
+                    <p>Verified testimonials and 5-star rated service with comprehensive insurance</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Door-to-Door Service</h3>
+                    <p>Convenient pickup and delivery at your preferred locations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Showcase -->
+    <section class="fleet" id="fleet">
+        <div class="container">            
+            <h2 class="section-fleet">Our Premium Fleet</h2>
+            <div class="fleet-slider">
+                <div class="fleet-track">
+                    <div class="fleet-item">
+                        <img src="images/01.jpg"
+                            alt="Car Carrier Truck">
+                        <div class="fleet-info">
+                            <h3>Sedan Collection</h3>
+                            <p>Professional business transport with fuel efficiency and elegant design</p>
+                        </div>
+                    </div>
+                    <div class="fleet-item">
+                        <img src="images/02.jpg"
+                            alt="Enclosed Trailer">
+                        <div class="fleet-info">
+                            <h3>Group Transport</h3>
+                            <p>Spacious vehicles for team transport with entertainment systems</p>
+                        </div>
+                    </div>
+                    <div class="fleet-item">
+                        <img src="images/03.jpg"
+                            alt="Single Car Trailer">
+                        <div class="fleet-info">
+                            <h3>Business Sedans</h3>
+                            <p>Comfortable and efficient sedans ideal for corporate travel and daily commutes</p>
+                        </div>
+                    </div>
+                    <div class="fleet-item">
+                        <img src="images/04.jpg"
+                            alt="Single Car Trailer">
+                        <div class="fleet-info">
+                            <h3>Luxury SUVs</h3>
+                            <p>Premium comfort for executive transport with leather interiors and climate control</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fleet-nav">
+                <button onclick="changeSlide(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button onclick="changeSlide(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>       
+    </section>
+
+ <!-- Booking Form -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <h2 class="section-title">Book Your Transport</h2>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <input type="text" id="pickup" placeholder=" " required>
+                        <label for="pickup">Pickup Location</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="delivery" placeholder=" " required>
+                        <label for="delivery">Delivery Location</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="pickupDate" required>
+                        <label for="pickupDate">Pickup Date</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="vehicleType" required>
+                            <option value="">Select Vehicle Type</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="truck">Truck</option>
+                            <option value="luxury">Luxury Car</option>
+                            <option value="classic">Classic Car</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">Full Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder=" " required>
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="transport" required>
+                            <option value="">Transport Type</option>
+                            <option value="open">Open Carrier</option>
+                            <option value="enclosed">Enclosed Trailer</option>
+                            <option value="single">Single Car Trailer</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea id="notes" rows="4" placeholder=" "></textarea>
+                    <label for="notes">Special Instructions</label>
+                </div>
+                <button type="submit" class="submit-btn">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+     <!-- Pricing Plans -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-head ">Transparent Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Standard</h3>
+                    <div class="price">&#8377;80<span style="font-size: 1rem;">/Km</span></div>
+                    <ul style="list-style: none; padding: 0;">
+                          <li>Business Sedan</li>
+                        <li>Professional Driver</li>
+                        <li>Basic Amenities</li>
+                        <li>GPS Tracking</li>
+                        <li>Standard Support</li>
+                        </ul><br>
+                     <a href="#booking" class=" cta-button">Choose Plan</a>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Premium</h3>
+                    <div class="price">&#8377;120<span style="font-size: 1rem;">/Km</span></div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>Executive SUV</li>
+                        <li>Experienced Driver</li>
+                        <li>Luxury Amenities</li>
+                        <li>Live Tracking</li>
+                        <li>Priority Support</li>
+                        <li>WiFi & Refreshments</li>
+                    </ul><br>
+                    <a href="#booking" class=" cta-button">Choose Plan</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Express</h3>
+                    <div class="price">&#8377;180<span style="font-size: 1rem;">/Km</span></div>
+                    <ul style="list-style: none; padding: 0;">
+                         <li>Group Van (8+ Seats)</li>
+                        <li>Professional Driver</li>
+                        <li>Entertainment System</li>
+                        <li>GPS Tracking</li>
+                        <li>Group Support</li>
+                        <li>Luggage Space</li>
+
+                        <li>✓ 24/7 support</li>
+                    </ul><br>
+                    <a href="#booking" class=" cta-button">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Testimonials -->
+    <section class="testimonials" id="reviews">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>Exceptional service! My car was delivered on time and in perfect condition. The tracking system kept me informed throughout the journey.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div>
+                            <strong>John Doe</strong>
+                            <div style="color: #666;">Business Executive</div>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>I was nervous about transporting my classic car, but AutoFlow handled it with such care. The enclosed trailer service was worth every penny.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div>
+                            <strong>Sarah Miller</strong>
+                            <div style="color: #666;">Car Collector</div>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>Professional team, competitive pricing, and excellent communication. I'll definitely use AutoFlow again for my next move.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div>
+                            <strong>Mike Johnson</strong>
+                            <div style="color: #666;">Military Personnel</div>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AutoFlow<br>Professional & Trust-Based</h3>
+                    <p>🚗Premium car transport services nationwide</p>
+                    <p>🚗Reliable Car Transport Services,Safe, On-Time, and Hassle-Free.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#services">Services</a></p>
+                    <p><a href="#fleet">Fleet</a></p>
+                    <p><a href="#booking">Book Now</a></p>
+                    <p><a href="#pricing">Pricing</a></p>
+                    <p><a href="#reviews">Reviews</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <p><a href="#contact">Contact Us</a></p>
+                    <p><a href="#help-center">Help Center</a></p>
+                    <p><a href="#faq">FAQ</a></p>
+                    <p><a href="#chatWindow">Chat with us</a></p>
+                    <p><a href="#support">24/7 Support</a></p>                  
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📞 +91-8375954898</p>
+                    <p>✉️ autoFlow@gmail.com</p>
+                    <p>📍 115 , Kankrola ,Gurgaon ,122505</p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #333; margin-top: 2rem; padding-top: 2rem; text-align: center;">
+                <p>&copy; © 2025  <a href="#home" style="text-decoration: none; color: #00d4ff" >AutoFlow</a>. All rights reserved. | Drive with comfort, arrive with confidence.</p>
+            </div>
+        </div>
+    </footer>
+<!-- Live Chat Widget -->
+    <div class="chat-widget">
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h4>💬 Live Support</h4>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div style="padding: 1rem; background: #f0f0f0; border-radius: 10px; margin-bottom: 1rem;">
+                    <strong>AutoFlow Support:</strong><br>
+                    Hi! How can I help you with your car transport needs today?
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message..." onkeypress="handleChatInput(event)">
+            </div>
+        </div>
+        <button class="chat-toggle" onclick="toggleChat()">
+            <i class="fas fa-comments"></i>
+        </button>
+    </div>
+    <!-- script content ----  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
